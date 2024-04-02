@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+
+    <style>
+       .js-heading{
+            color:blue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="js-heading">Hello Monika</h1>
+
+    <script>
+      // Function with radius as a parameter and returns the area
+function calculateCircleAreaWithParam(radius) {
+    return Math.PI * radius * radius;
+}
+
+// Function without any parameter but returns the area
+function calculateCircleAreaWithoutParam() {
+    var radius = 5; 
+    return Math.PI * radius * radius;
+}
+
+// Function with radius as a parameter but does not return any value
+function printCircleArea(radius) {
+    var area = Math.PI * radius * radius;
+    console.log("The area of the circle with radius", radius, "is:", area);
+}
+
+// Function without any parameter and does not return any value
+function printCircleAreaWithoutParam() {
+    var radius = 5; 
+    var area = Math.PI * radius * radius;
+    console.log("The area of the circle with radius", radius, "is:", area);
+}
+
+// Example usage of the functions
+console.log("1. Function with radius as a parameter and returns the area:");
+console.log("Area:", calculateCircleAreaWithParam(5)); // Example radius
+
+console.log("\n2. Function without any parameter but returns the area:");
+console.log("Area:", calculateCircleAreaWithoutParam());
+
+console.log("\n3. Function with radius as a parameter but does not return any value:");
+printCircleArea(5); 
+
+console.log("\n4. Function without any parameter and does not return any value:");
+printCircleAreaWithoutParam();
+
+    </script>
+</body>
+</html>
